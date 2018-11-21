@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using Celeste.Mod.Core;
+using Celeste.Mod.Speedrun;
 
 namespace Celeste {
     class patch_OuiTitleScreen : OuiTitleScreen {
@@ -30,7 +31,7 @@ namespace Celeste {
         public void ctor() {
             orig_ctor();
 
-            version += $"\nEverest v.{Everest.Version}-{Everest.VersionTag}";
+            version += $"\nEverest v.{Everest.Version}-{Everest.VersionTag}\nSpeedrun status is:\n{(SpeedrunChecker.IsGood ? "VERIFIED" : "INVALID")}";
             updateTex = GFX.Gui["areas/new"];
 
             // Initialize DebugRC here, as the play mode can change during the intro.

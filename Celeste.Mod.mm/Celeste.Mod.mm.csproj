@@ -183,6 +183,7 @@
     <Compile Include="Mod\UI\TextMenuExt.cs" />
     <Compile Include="Mod\UI\OuiMapList.cs" />
     <Compile Include="Mod\UI\OuiModOptions.cs" />
+    <Compile Include="Mod\Speedrun\SpeedrunChecker.cs" />
     <Compile Include="MonoModRules.cs" />
     <Compile Include="Patches\Decal.cs" />
     <Compile Include="Patches\FancyText.cs" />
